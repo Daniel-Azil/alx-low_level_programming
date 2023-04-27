@@ -1,2 +1,2 @@
 # README
-* Singly linked lists
+* Alx low level programming repo
