@@ -16,17 +16,18 @@ int _strlen_recursion(char *s)
 /**
  * comparator - compares each character of the string.
  * @s: pointer.
- * @n1: variable.
- * @n2: variable.
+ * @n1: used variable.
+ * @n2: used variable.
  * Return: results.
  */
-
 int comparator(char *s, int n1, int n2)
 {
 	if (*(s + n1) == *(s + n2))
+	{
 		if (n1 == n2 || n1 == n2 + 1)
 			return (1);
 		return (0 + comparator(s, n1 + 1, n2 - 1));
+	}
 	return (0);
 }
 
