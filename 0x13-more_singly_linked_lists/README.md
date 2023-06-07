@@ -1,2 +1,0 @@
-# More singly linked lists
-
