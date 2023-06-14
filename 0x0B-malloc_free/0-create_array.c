@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * generate_array - constructs an array of characters.
+ * *create_array - constructs an array of characters.
  * @size: size of the array.
  * @c: character to be stored.
  * Returns: pointer to the array of characters.
