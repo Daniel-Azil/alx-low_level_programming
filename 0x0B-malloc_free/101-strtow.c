@@ -44,7 +44,7 @@ char **strtow(char *str)
 	if (wd == 0)
 		return (NULL);
 
-	grid = (char **) malloc(sizeof(char *) * (words + 1));
+	grid = (char **) malloc(sizeof(char *) * (wd + 1));
 	if (grid == NULL)
 		return (NULL);
 
