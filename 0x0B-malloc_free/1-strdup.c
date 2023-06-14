@@ -3,7 +3,7 @@
 /**
  * _strdup - creates a duplicate of a string in newly allocated memory.
  * @str: input string.
- * Returns: pointer to the duplicated string.
+ * Return: pointer to the duplicated string.
  */
 
 char *_strdup(char *str)
