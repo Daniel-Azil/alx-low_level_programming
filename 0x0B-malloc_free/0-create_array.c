@@ -13,12 +13,16 @@ char *create_array(unsigned int size, char c)
 	unsigned int z;
 
 	if (size == 0)
+	{
 		return (NULL);
+	}
 
 	az = malloc(sizeof(c) * size);
 
 	if (az == NULL)
+	{
 		return (NULL);
+	}
 
 	for (z = 0; z < size; z++)
 		az[z] = c;
