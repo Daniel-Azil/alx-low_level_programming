@@ -43,7 +43,7 @@ char *argstostr(int ac, char **av)
 			az++;
 			z = 0;
 		}
-		if (ia < n - 1)
+		if (az < n - 1)
 			result[az] = av[a][z];
 	}
 	result[az] = '\0';
