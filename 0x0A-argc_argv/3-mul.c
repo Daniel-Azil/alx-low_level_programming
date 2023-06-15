@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - multiplies two numbers.
- * @argc: number of command line arguments.
- * @argv: array that contains the program command line arguments.
- * Return: 0 - success.
+ * main - mainf fuction.
+ * @argc: number of arguments.
+ * @argv: array of arguments.
+ * Return: return 0 when successfull.
  */
 int main(int argc, char *argv[])
 {
