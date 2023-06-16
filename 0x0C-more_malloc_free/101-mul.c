@@ -21,18 +21,18 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	for (a = 1; a < argc; a++)
+	for (num1 = 1; num1 < argc; num1++)
 	{
-		for (j = 0; argv[a][j] != '\0'; j++)
+		for (num2 = 0; argv[num1][num2] != '\0'; num2++)
 		{
-			if (argv[a][j] > 57 || argv[a][j] < 48)
+			if (argv[num1][num2] > 57 || argv[num1][num2] < 48)
 			{
 				printf("Error\n");
 				exit(98);
 			}
 		}
 	}
-	cal = atol(argv[1]) * atol(argv[2]);
-	printf("%lu\n", cal);
+	mul = atol(argv[1]) * atol(argv[2]);
+	printf("%lu\n", mul);
 	return (0);
 }
