@@ -8,7 +8,7 @@
  * @owner: owner.
  * Return: struct.
  */
-dg_var *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dg_var *dg_pnt;
 	int var, dg_name, dg_owner;
