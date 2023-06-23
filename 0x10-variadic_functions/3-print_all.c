@@ -11,8 +11,8 @@ void print_all(const char * const format, ...)
 	va_list var;
 	unsigned int a = 0, az = 0;
 	char *cht;
-
 	va_start(var, format);
+
 	while (format && format[a])
 	{
 		switch (format[a])
