@@ -3,40 +3,48 @@
 /**
  * print_all - Display input.
  * @format: arguments passed to function.
- *
  * Return: void
  */
-void print_all(const char * const format, ...) {
-	int i = 0;
-	char *sep = "";
-	va_list args;
-	va_start(args, format);
-	while (format[i]) {
-		if (format[i] == 'c') {
-			printf("%s%c", sep, va_arg(args, int));
-			sep = ", ";
+void print_all(const char *const format, ...)
+{
+	int a = 0;
+	char *pnt = "";
+	va_list vg;
 
-		} else if (format[i] == 'i') {
-			printf("%s%i", sep, va_arg(args, int));
-			sep = ", ";
-
-		} else if (format[i] == 'f') {
-			printf("%s%f", sep, va_arg(args, double));
-			sep = ", ";
-
-		} else if (format[i] == 's') {
-			char *s = va_arg(args, char *);
-
-			if (s == NULL) {
-				printf("%s(nil)", sep);
-
-			} else {
-				printf("%s%s", sep, s);
-			}
-			sep = ", ";
+	va_start(vg, format);
+	while (format[a])
+	{
+		if (format[a] == 'c')
+		{
+			printf("%s%c", pnt, va_arg(vg, int));
+			pnt = ", ";
 		}
-		i++;
+		else if (format[a] == 'i')
+		{
+			printf("%s%i", pnt, va_arg(vg, int));
+			pnt = ", ";
+		}
+		else if (format[a] == 'f')
+		{
+			printf("%s%f", pnt, va_arg(vg, double));
+			pnt = ", ";
+		}
+		else if (format[a] == 's')
+		{
+			char *str = va_arg(vg, char *);
+
+			if (str == NULL)
+			{
+				printf("%s(nil)", pnt);
+			}
+			else
+			{
+				printf("%s%s", pnt, str);
+			}
+			pnt = ", ";
+		}
+		a++;
 	}
-	va_end(args);
+	va_end(vg);
 	puts("");
 }
