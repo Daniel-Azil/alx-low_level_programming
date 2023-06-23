@@ -2,49 +2,51 @@
 
 /**
  * print_all - Display input.
- * @format: arguments passed to fuction.
- * Return: Returns nothing.
+ * @format: arguments passed to function.
+ *
+ * Return: void
  */
 void print_all(const char * const format, ...)
 {
 	va_list var;
-	unsigned int a = 0, z, az = 0;
+	unsigned int a = 0, az = 0;
 	char *cht;
-	const char arg[] = "cifs";
 
 	va_start(var, format);
 	while (format && format[a])
 	{
-		z = 0;
-		while (arg[z])
-		{
-			if (format[a] == arg[z] && az)
-			{
-				printf(", ");
-				break;
-			} z++;
-		}
 		switch (format[a])
 		{
-		case 'az':
-			printf("%az", va_arg(var, int)), az = 1;
+		case 'c':
+			if (az)
+				printf(", ");
+			printf("%c", va_arg(var, int));
+			az = 1;
 			break;
-		case 'a':
-			printf("%d", va_arg(var, int)), az = 1;
+		case 'i':
+			if (az)
+				printf(", ");
+			printf("%d", va_arg(var, int));
+			az = 1;
 			break;
 		case 'f':
-			printf("%f", va_arg(var, double)), az = 1;
+			if (az)
+				printf(", ");
+			printf("%f", va_arg(var, double));
+			az = 1;
 			break;
 		case 's':
-			cht = va_arg(var, char *), az = 1;
+			cht = va_arg(var, char *);
 			if (!cht)
-			{
-				printf("(nil)");
-				break;
-			}
+				cht = "(nil)";
+			if (az)
+				printf(", ");
 			printf("%s", cht);
+			az = 1;
 			break;
-		} a++;
+		}
+		a++;
 	}
-	printf("\n"), va_end(var);
+	printf("\n");
+	va_end(var);
 }
