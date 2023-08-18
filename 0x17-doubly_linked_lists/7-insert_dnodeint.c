@@ -4,7 +4,7 @@
  * @h: Argument of the custom function.
  * @idx: Argument of the custom function.
  * @n: Argument of the custom function.
- * Returns: returns the variable named az_dl1
+ * Return: returns the variable named az_dl1
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {

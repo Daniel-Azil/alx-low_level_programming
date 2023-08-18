@@ -9,6 +9,7 @@
 size_t dlistint_len(const dlistint_t *h)
 {
 	int mn_v;
+
 	mn_v = 0;
 
 	if (h == NULL)

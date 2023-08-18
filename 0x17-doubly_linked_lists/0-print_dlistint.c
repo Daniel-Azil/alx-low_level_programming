@@ -8,6 +8,7 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	int az_var;
+
 	az_var = 0;
 
 	if (h == NULL)
