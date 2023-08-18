@@ -8,6 +8,7 @@ int sum_dlistint(dlistint_t *head)
 {
 	int dkw;
 	dkw = 0;
+
 	if (head != NULL)
 	{
 		while (head->prev != NULL)

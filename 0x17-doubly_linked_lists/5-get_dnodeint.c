@@ -1,14 +1,15 @@
 #include "lists.h"
 
 /**
- * get_dnodeint_at_index - 
- * @head: Argument of the custom function
- * @index: Argument of the custom function
- * Return: returns the function argument named head
+ * get_dnodeint_at_index - Initialised a custom function.
+ * @head: Argument of the custom function.
+ * @index: Argument of the custom function.
+ * Return: returns the function argument named _unit_var.
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int _uint_var;
+
 	if (head == NULL)
 		return (NULL);
 	while (head->prev != NULL)

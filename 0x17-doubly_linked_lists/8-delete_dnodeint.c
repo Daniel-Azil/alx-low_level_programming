@@ -9,7 +9,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *az_pnto, *az_pntt;
 	unsigned int _uint_var;
+
 	az_pnto = *head;
+
 	if (az_pnto != NULL)
 		while (az_pnto->prev != NULL)
 			az_pnto = az_pnto->prev;

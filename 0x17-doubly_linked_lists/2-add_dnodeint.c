@@ -9,6 +9,7 @@
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *az_dl1, *az_dl2;
+
 	az_dl1 = malloc(sizeof(dlistint_t));
 	if (az_dl1 == NULL)
 		return (NULL);
