@@ -10,6 +10,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *az_dl1, *dlit_pnt;
 	unsigned int _uint_var;
+
 	az_dl1 = NULL;
 
 	if (idx == 0)
