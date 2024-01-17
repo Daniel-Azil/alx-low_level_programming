@@ -21,3 +21,7 @@ Space complexity (worst case) of an iterative linear search algorithm in an arra
 ## 4-O
 ### Description:
 Time complexity (worst case) of a binary search in an array of size n.
+
+## 5-O
+### Descrption:
+Space complexity (worst case) of a binary search in an array of size n.
