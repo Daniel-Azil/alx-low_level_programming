@@ -25,3 +25,7 @@ Time complexity (worst case) of a binary search in an array of size n.
 ## 5-O
 ### Descrption:
 Space complexity (worst case) of a binary search in an array of size n.
+
+## 6-O
+### Description:
+Space complexity of this function / algorithm.
