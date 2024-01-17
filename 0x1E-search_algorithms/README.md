@@ -14,7 +14,10 @@ This is a C program that implements the binary search algorithm to find the inde
 ### Description:
 Time complexity (worst case) of a linear search in an array of size n.
 
-##
+## 3-O
 ### Description:
 Space complexity (worst case) of an iterative linear search algorithm in an array of size n.
 
+## 4-O
+### Description:
+Time complexity (worst case) of a binary search in an array of size n.
