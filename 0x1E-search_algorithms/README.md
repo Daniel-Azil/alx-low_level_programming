@@ -9,3 +9,7 @@ The `linear_search` function is a custom implementation of the linear search alg
 ## 1-binary.c
 ### Desciption:
 This is a C program that implements the binary search algorithm to find the index of a target value in a sorted array.
+
+## 2-O
+### Description:
+Time complexity (worst case) of a linear search in an array of size n.
